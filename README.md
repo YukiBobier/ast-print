@@ -110,6 +110,12 @@ This will output the AST of the given Go source, such as:
     86  }
 ```
 
+As `ast-print` reads from standard input, you can use it with `go doc`:
+
+```
+go doc -src fmt.Println | ast-print
+```
+
 ## License
 
 `ast-print` is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
